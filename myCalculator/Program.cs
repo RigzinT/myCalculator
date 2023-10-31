@@ -41,18 +41,18 @@ namespace myCalculator
       Console.Write("\nThe Sum is:" + sum);
 
      //feature y division
-     Console.WriteLine("Division method");
+     Console.WriteLine("\nDivision method");
      Console.Write("Enter first number:");
      double fno_div = Convert.ToDouble(Console.ReadLine());
 
      Console.Write("\nEnter second number:");
      double sno_div = Convert.ToDouble(Console.ReadLine());
 
-     double div = AddMethod(fno_div, sno_div);
+     double div = DivMethod(fno_div, sno_div);
      Console.Write("\nThe Sum is:" + div);
 
      //feature x subtration
-     Console.WriteLine("Feature x: Subtraction");
+     Console.WriteLine("\nFeature x: Subtraction");
      Console.Write("Enter first number");
      double fno_s = Convert.ToDouble(Console.ReadLine());
      Console.Write("\nEnter second number:");
@@ -61,8 +61,8 @@ namespace myCalculator
      Console.Write("\nThe subtracted value is:" + sub);
         
      ///feature z multiplication
-      Console.Write("Multiplicatioin:");
-      Console.Write("Enter first number:");
+      Console.Write("\nMultiplicatioin:");
+      Console.Write("\nEnter first number:");
       double fno_m = Convert.ToDouble(Console.ReadLine());
 
       Console.Write("\nEnter second number:");
