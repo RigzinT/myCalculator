@@ -6,12 +6,12 @@ namespace myCalculator
 {
   class Program
   {
-        static double MultiplyMethod(double fno, double sno)
-        {
-            double multi = fno * sno;
-            return multi;
-        }
-        static double AddMethod(double fno, double sno)
+   static double MultiplyMethod(double fno, double sno)
+    {
+       double multi = fno * sno;
+       return multi;
+    }
+    static double AddMethod(double fno, double sno)
     {
       double sum = fno + sno;
       return sum;
@@ -29,7 +29,8 @@ namespace myCalculator
      }
     static void Main(string[] args)
     {
-            double fno, sno, sum;
+      //Addition method
+      double fno, sno, sum;
       Console.Write("Enter first number:");
       fno = Convert.ToDouble(Console.ReadLine());
 
@@ -39,7 +40,7 @@ namespace myCalculator
       sum = AddMethod(fno,sno);
       Console.Write("\nThe Sum is:" + sum);
 
-     //feature y
+     //feature y division
      Console.WriteLine("Division method");
      Console.Write("Enter first number:");
      double fno_div = Convert.ToDouble(Console.ReadLine());
@@ -50,7 +51,7 @@ namespace myCalculator
      double div = AddMethod(fno_div, sno_div);
      Console.Write("\nThe Sum is:" + div);
 
-     //feature x
+     //feature x subtration
      Console.WriteLine("Feature x: Subtraction");
      Console.Write("Enter first number");
      double fno_s = Convert.ToDouble(Console.ReadLine());
@@ -59,7 +60,7 @@ namespace myCalculator
      double sub = SubtractionMethod(fno_s, sno_s);
      Console.Write("\nThe subtracted value is:" + sub);
         
-     ///feature z
+     ///feature z multiplication
       Console.Write("Multiplicatioin:");
       Console.Write("Enter first number:");
       double fno_m = Convert.ToDouble(Console.ReadLine());
@@ -71,6 +72,5 @@ namespace myCalculator
       Console.Write("\nThe multiplicaton value is:" + multi);
 
     }
-
   }
 }
