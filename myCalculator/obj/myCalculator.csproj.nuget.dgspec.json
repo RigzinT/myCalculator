@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rigzi\\OneDrive\\Documents\\TorrensUni\\DevOps\\assessment 2\\myProg\\myCalculator\\myCalculator.csproj": {}
+    "C:\\Users\\rigzi\\OneDrive\\Documents\\TorrensUni\\DevOps\\assessment 2\\myCalculator\\myCalculator\\myCalculator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rigzi\\OneDrive\\Documents\\TorrensUni\\DevOps\\assessment 2\\myProg\\myCalculator\\myCalculator.csproj": {
+    "C:\\Users\\rigzi\\OneDrive\\Documents\\TorrensUni\\DevOps\\assessment 2\\myCalculator\\myCalculator\\myCalculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rigzi\\OneDrive\\Documents\\TorrensUni\\DevOps\\assessment 2\\myProg\\myCalculator\\myCalculator.csproj",
+        "projectUniqueName": "C:\\Users\\rigzi\\OneDrive\\Documents\\TorrensUni\\DevOps\\assessment 2\\myCalculator\\myCalculator\\myCalculator.csproj",
         "projectName": "myCalculator",
-        "projectPath": "C:\\Users\\rigzi\\OneDrive\\Documents\\TorrensUni\\DevOps\\assessment 2\\myProg\\myCalculator\\myCalculator.csproj",
+        "projectPath": "C:\\Users\\rigzi\\OneDrive\\Documents\\TorrensUni\\DevOps\\assessment 2\\myCalculator\\myCalculator\\myCalculator.csproj",
         "packagesPath": "C:\\Users\\rigzi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rigzi\\OneDrive\\Documents\\TorrensUni\\DevOps\\assessment 2\\myProg\\myCalculator\\obj\\",
+        "outputPath": "C:\\Users\\rigzi\\OneDrive\\Documents\\TorrensUni\\DevOps\\assessment 2\\myCalculator\\myCalculator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rigzi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

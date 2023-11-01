@@ -4,7 +4,7 @@ namespace myCalculator
 {
   public class Program
   {
-    public static double MultiplyMethod(double fno, double sno)
+   public static double MultiplyMethod(double fno, double sno)
     {
        double multi = fno * sno;
        return multi;
@@ -19,13 +19,12 @@ namespace myCalculator
          double div = fno / sno;
          return div;
     }
-
-    public static double SubtractionMethod(double fno, double sno)
+    public static int SubtractionMethod(double fno, double sno)
     {
-          double sub = fno - sno;
+          int sub = Convert.ToInt32(fno - sno);
           return sub;
      }
-    static void Main(string[] args)
+     static void Main(string[] args)
     {
       //Addition method
       double fno, sno, sum;
