@@ -1,28 +1,26 @@
 ﻿using System;
-using System.Diagnostics.CodeAnalysis;
-using System.Transactions;
 
 namespace myCalculator
 {
-  class Program
+  public class Program
   {
-   static double MultiplyMethod(double fno, double sno)
+    public static double MultiplyMethod(double fno, double sno)
     {
        double multi = fno * sno;
        return multi;
     }
-    static double AddMethod(double fno, double sno)
+    public static double AddMethod(double fno, double sno)
     {
       double sum = fno + sno;
       return sum;
     }
-    static double DivMethod(double fno, double sno)
+    public static double DivMethod(double fno, double sno)
     {
          double div = fno / sno;
          return div;
     }
 
-    static double SubtractionMethod(double fno, double sno)
+    public static double SubtractionMethod(double fno, double sno)
     {
           double sub = fno - sno;
           return sub;
