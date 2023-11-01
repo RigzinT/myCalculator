@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "99eX+zfWGWr2er3NROXe7Rg9FOzMMEkP1sNv5c10wpqWpnrfEJRDoNY5/MiaE+shXYBzVVOQfgR9+/4kVOV1XA==",
+  "dgSpecHash": "gMZ3y/pSGVqAyGOhR2wlREebJVtApXF5QdqKQEXBsfoVz1B6r9ueXWMateRdhwFqfYwb/YVtw2Lf6KlLHAe5Kg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rigzi\\OneDrive\\Documents\\TorrensUni\\DevOps\\assessment 2\\myProg\\myCalculator\\myCalculator.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\rigzi\\OneDrive\\Documents\\TorrensUni\\DevOps\\assessment 2\\myCalculator\\myCalculator\\myCalculator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rigzi\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\rigzi\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
+    "C:\\Users\\rigzi\\.nuget\\packages\\nunit\\3.13.3\\nunit.3.13.3.nupkg.sha512"
+  ],
   "logs": []
 }
