@@ -22,9 +22,9 @@ namespace myCalculator
          return div;
     }
 
-    static double SubtractionMethod(double fno, double sno)
+    public static int SubtractionMethod(double fno, double sno)
     {
-          double sub = fno - sno;
+          int sub = Convert.ToInt32(fno - sno);
           return sub;
      }
      static void Main(string[] args)
