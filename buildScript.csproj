@@ -1,0 +1,30 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	
+	<!-- Define properties -->
+	<PropertyGroup>
+		<OutputDir>build_bin</OutputDir>
+		<ZipExe>"C:\Program Files\7-Zip\7z.exe"</ZipExe>
+	</PropertyGroup>
+
+	
+	<ItemGroup>
+		<Compile Include="myCalculator\Program.cs" />
+	</ItemGroup>
+
+
+	<Target Name="Compile">
+		<Csc Sources="@(Compile)" OutputAssembly="$(OutputDir)\MyConsoleCalculator.exe" />
+	</Target>
+
+	<Target Name="Test" DependsOnTargets="Compile">
+		<!--  -->
+	</Target>
+
+	<Target Name="Package" DependsOnTargets="Test">
+		<Exec Command="$(ZipExe) a -tzip $(OutputDir)\MyConsoleCalculatorPackage.zip $(OutputDir)\MyConsoleCalculator.exe" />
+	</Target>
+
+	<!-- Define entry point -->
+	<Target Name="Build" DependsOnTargets="Package" />
+
+</Project>
