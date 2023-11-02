@@ -1,13 +1,12 @@
 using System;
-using NUnit.Framework;
 using myCalculator;
+using NUnit.Framework;
 
 namespace myCalculatorNunitTest
 {
-    public class Tests
-    {
-        [TestFixture]
-        public class ProgramTests
+
+    [TestFixture]
+    public class ProgramTests
         {
             [Test]
             public void TestAddMethod()
@@ -79,6 +78,6 @@ namespace myCalculatorNunitTest
                 // Assert
                 Assert.AreEqual(expected, actual);
             }
-        }
+        
     }
 }
