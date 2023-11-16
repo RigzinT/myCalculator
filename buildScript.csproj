@@ -4,11 +4,13 @@
 	<PropertyGroup>
 		<OutputDir>build_bin</OutputDir>
 		<ZipExe>"C:\Program Files\7-Zip\7z.exe"</ZipExe>
+		<NUnitConsoleExe>"C:\Users\rigzi\.nuget\packages\nunit.consolerunner\3.16.3\tools\nunit3-console.exe"</NUnitConsoleExe>
 	</PropertyGroup>
 
 	
 	<ItemGroup>
 		<Compile Include="myCalculator\Program.cs" />
+		<NUnitTestFiles Include="myCalculatorNunitTest\UnitTest1.cs" />
 	</ItemGroup>
 
 
@@ -18,6 +20,7 @@
 
 	<Target Name="Test" DependsOnTargets="Compile">
 		<!--  -->
+		<Exec Command="$(NUnitConsoleExe) @(NUnitTestFiles->'%(C:\Users\rigzi\.nuget\packages\nunit.consolerunner\3.16.3\tools\nunit3-console.exe)')" />
 	</Target>
 
 	<Target Name="Package" DependsOnTargets="Test">
