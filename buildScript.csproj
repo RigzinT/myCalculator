@@ -1,13 +1,11 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-	
-	<!-- Define properties -->
+
 	<PropertyGroup>
 		<OutputDir>build_bin</OutputDir>
 		<ZipExe>"C:\Program Files\7-Zip\7z.exe"</ZipExe>
 		<NUnitConsoleExe>"C:\Users\rigzi\.nuget\packages\nunit.consolerunner\3.16.3\tools\nunit3-console.exe"</NUnitConsoleExe>
 	</PropertyGroup>
 
-	
 	<ItemGroup>
 		<Compile Include="myCalculator\Program.cs" />
 		<NUnitTestFiles Include="myCalculatorNunitTest\UnitTest1.cs" />
@@ -19,7 +17,6 @@
 	</Target>
 
 	<Target Name="Test" DependsOnTargets="Compile">
-		<!--  -->
 		<Exec Command="$(NUnitConsoleExe) @(NUnitTestFiles->'%('C:\Users\rigzi\.nuget\packages\nunit.consolerunner\3.16.3\tools\nunit3-console.exe')')" />
 	</Target>
 
@@ -27,7 +24,6 @@
 		<Exec Command="$(ZipExe) a -tzip $(OutputDir)\MyConsoleCalculatorPackage.zip $(OutputDir)\MyConsoleCalculator.exe" />
 	</Target>
 
-	<!-- Define entry point -->
 	<Target Name="Build" DependsOnTargets="Package" />
 
 </Project>
