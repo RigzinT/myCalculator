@@ -17,7 +17,9 @@
 	</Target>
 
 	<Target Name="Test" DependsOnTargets="Compile">
-		<Exec Command="$(NUnitConsoleExe) @(NUnitTestFiles->'%('C:\Users\rigzi\.nuget\packages\nunit.consolerunner\3.16.3\tools\nunit3-console.exe')')" />
+
+		<Exec Command="dotnet test --no-build --verbosity normal" WorkingDirectory="myCalculatorNunitTest" />
+
 	</Target>
 
 	<Target Name="Package" DependsOnTargets="Test">
