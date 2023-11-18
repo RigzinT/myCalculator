@@ -17,8 +17,8 @@
 	</Target>
 
 	<Target Name="Test" DependsOnTargets="Compile">
-
-		<Exec Command="dotnet test --no-build --verbosity normal" WorkingDirectory="myCalculatorNunitTest" />
+        
+		<Exec Command="dotnet test --verbosity normal" WorkingDirectory="myCalculatorNunitTest" />
 
 	</Target>
 
