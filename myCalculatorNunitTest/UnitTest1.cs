@@ -55,12 +55,12 @@ namespace myCalculatorNunitTest
             public void TestSubtractionMethod()
             {
                 // Arrange
-                double expected = 3.3;
-                double fno = 6.5;
+                double expected = 3.0;
+            double fno = 6.5;
                 double sno = 3.2;
 
                 // Act
-                int actual = Program.SubtractionMethod(fno, sno);
+                double actual = Program.SubtractionMethod(fno, sno);
 
                 // Assert
                 Assert.AreEqual(expected, actual);
@@ -69,12 +69,12 @@ namespace myCalculatorNunitTest
             public void TestSubtractionNegativeMethod()
             {
                 // Arrange
-                double expected = -2.1;
+                double expected = -2.0;
                 double fno = 1.1;
                 double sno = 3.2;
 
                 // Act
-                int actual = Program.SubtractionMethod(fno, sno);
+                double actual = Program.SubtractionMethod(fno, sno);
 
                 // Assert
                 Assert.AreEqual(expected, actual);

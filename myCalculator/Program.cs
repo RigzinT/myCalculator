@@ -19,10 +19,11 @@ namespace myCalculator
          double div = fno / sno;
          return div;
     }
-    public static int SubtractionMethod(double fno, double sno)
+    public static double SubtractionMethod(double fno, double sno)
     {
-          int sub = Convert.ToInt32(fno - sno);
-          return sub;
+          double sub = Convert.ToInt32(fno - sno);
+          double roundedSub = Math.Round(sub, 1);
+          return roundedSub;
      }
      static void Main(string[] args)
     {
